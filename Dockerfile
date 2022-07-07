@@ -15,7 +15,5 @@ RUN chown -R 101:101 /app && chmod -R g+w /app
 USER appuser
 COPY . ./
 
-RUN bun install
-
 EXPOSE 3000
 CMD bun run start
